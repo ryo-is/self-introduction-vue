@@ -1,0 +1,16 @@
+@import "../../common/scss/config";
+
+.home {
+  background-color: $home-back-color;
+  color: $home-font-color;
+  height: 100vh;
+
+  .main-img-area {
+    margin: auto;
+    width: 560px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+}
