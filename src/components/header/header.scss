@@ -1,5 +1,16 @@
 @import "../../common/scss/config";
 
+@keyframes headerLinkHover {
+  from {
+    background-color: $home-back-color;
+    color: $home-font-color;
+  }
+  to {
+    background-color: $home-font-color;
+    color: $home-back-color;
+  }
+}
+
 .header {
   background-color: $home-back-color;
   color: $home-font-color;
@@ -8,14 +19,24 @@
   width: 100%;
 
   .header-links {
-    line-height: 64px;
+    line-height: 54px;
     margin: auto;
+    padding: 10px 0;
     width: 1080px;
 
     .link {
+      box-sizing: border-box;
       cursor: pointer;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
+      margin: 0 1rem;
+
+      &:hover {
+        animation: headerLinkHover .5s linear;
+        background-color: $home-font-color;
+        border-radius: 10px;
+        color: $home-back-color;
+      }
     }
   }
 }
