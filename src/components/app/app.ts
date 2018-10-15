@@ -7,5 +7,4 @@ import Header from "../header/Header.vue";
     Header
   }
 })
-
 export default class App extends Vue {}
