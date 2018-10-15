@@ -6,6 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+    "tslint": "tslint --fix -c tslint.json \"src/**/*.ts\"",
+    "sasslint": "sass-lint -c .sass-lint.yml -v",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e"
   },
@@ -32,6 +34,8 @@
     "babel-core": "7.0.0-bridge.0",
     "lint-staged": "^7.2.2",
     "node-sass": "^4.9.0",
+    "pug": "^2.0.3",
+    "pug-loader": "^2.4.0",
     "sass-loader": "^7.0.1",
     "ts-jest": "^23.0.0",
     "typescript": "^3.0.0",
