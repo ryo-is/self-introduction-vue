@@ -1,0 +1,21 @@
+@import "../../common/scss/config";
+
+.header {
+  background-color: $home-back-color;
+  color: $home-font-color;
+  height: 64px;
+  position: fixed;
+  width: 100%;
+
+  .header-links {
+    line-height: 64px;
+    margin: auto;
+    width: 1080px;
+
+    .link {
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}
