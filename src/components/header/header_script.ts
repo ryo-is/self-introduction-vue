@@ -32,7 +32,7 @@ export default class Header extends Vue {
   ];
 
   public changePage(pass: string) {
-    console.log("change page");
+    console.log("change page"); // eslint-disable-line no-console
     return router.push(pass);
   }
 }
