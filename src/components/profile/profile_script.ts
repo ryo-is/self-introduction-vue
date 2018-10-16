@@ -13,8 +13,9 @@ export default class Profile extends Vue {
       text: "1992/06/02"
     },
     {
-      tag: "社会人歴",
-      text: "4年目"
+      tag: "紹介文",
+      text:
+        "京都のIT企業でIoT向けアプリケーションを開発しています。IoTデバイスからデータを取得して蓄積して可視化するまでの開発を経験しました。AWSにどっぷりな(フロントサイド)エンジニア。最近はVueに魅了され、ほぼ独断で自社アプリを書き換えてしまいました。Serverlessなアーキテクチャが好物。"
     },
     {
       tag: "Language",
