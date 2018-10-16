@@ -7,27 +7,27 @@ export default class Header extends Vue {
   headerLinks: headerLinksType[] = [
     {
       label: "Top",
-      pass: "/"
+      path: "/"
     },
     {
       label: "Profile",
-      pass: "/profile"
+      path: "/profile"
     },
     {
       label: "Language",
-      pass: "/language"
+      path: "/language"
     },
     {
       label: "Favorite",
-      pass: "/favorite"
+      path: "/favorite"
     },
     {
       label: "CloudService",
-      pass: "/cloudService"
+      path: "/cloudService"
     },
     {
       label: "Contact",
-      pass: "/contact"
+      path: "/contact"
     }
   ];
 

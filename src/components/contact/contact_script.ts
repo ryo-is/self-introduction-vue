@@ -7,5 +7,5 @@ export default class Contact extends Vue {
   twitterInfo = {
     name: "is_ryo",
     link: "https://twitter.com/is_ryo"
-  }
+  };
 }

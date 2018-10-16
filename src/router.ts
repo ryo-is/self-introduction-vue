@@ -6,6 +6,7 @@ import Profile from "./components/profile/Profile.vue";
 import Language from "./components/language/Language.vue";
 import Favorite from "./components/favorite/Favorite.vue";
 import CloudService from "./components/cloudService/CloudService.vue";
+import AWS from "./components/cloudService/children/aws/AWS.vue";
 import Contact from "./components/contact/Contact.vue";
 
 Vue.use(Router);
@@ -37,7 +38,14 @@ export default new Router({
     {
       path: "/cloudService",
       name: "cloudService",
-      component: CloudService
+      component: CloudService,
+      children: [
+        {
+          path: "aws",
+          name: "aws",
+          component: AWS
+        }
+      ]
     },
     {
       path: "/contact",

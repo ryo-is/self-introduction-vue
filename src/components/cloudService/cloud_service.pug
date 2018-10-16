@@ -1,2 +1,8 @@
 .cloud-service
-  .cloud-service-content-area {{ title }}
+  .cloud-service-content-area
+    .title {{ title }}
+    el-row
+      el-col(:span="12" v-for="item in serviceLinks" :key="item.text")
+        el-button(type="warning" v-on:click="changePage(item.path)") {{ item.text }}
+    router-view
+
