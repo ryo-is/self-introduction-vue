@@ -2,7 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 
 import Home from "./components/home/Home.vue";
-import Profile from "./components/about/Profile.vue";
+import Profile from "./components/profile/Profile.vue";
 
 Vue.use(Router);
 

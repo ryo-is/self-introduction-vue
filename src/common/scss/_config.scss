@@ -1,5 +1,8 @@
 $color-black: #000000;
 $color-white: #ffffff;
 
-$home-back-color: #495664;
-$home-font-color: #f8fceb;
+$base-back-color: #f8fceb;
+$base-font-color: #495664;
+
+$home-back-color: $base-font-color;
+$home-font-color: $base-back-color;
