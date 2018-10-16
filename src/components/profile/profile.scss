@@ -1,0 +1,53 @@
+@import "../../common/scss/config";
+
+.about {
+  background-color: $home-font-color;
+  color: $home-back-color;
+  height: 100%;
+  min-height: 100vh;
+
+  .about-content-area {
+    margin: auto;
+    padding-top: 64px;
+    width: 60%;
+
+    .image-area {
+      margin: 30px auto 0;
+      width: 280px;
+
+      .about-logo {
+        border-radius: 20px;
+      }
+    }
+
+    .profile-area {
+      font-size: 22px;
+      margin: 30px 0;
+
+      .el-row {
+        line-height: 44px;
+        margin: auto;
+        width: 80%;
+
+        .tag {
+          font-weight: bold;
+          padding-right: 2rem;
+          text-align: right;
+        }
+
+        .text {
+          padding-left: 2rem;
+          text-align: left;
+
+          .link-area {
+            margin: 0;
+
+            .el-col {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}

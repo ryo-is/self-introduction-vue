@@ -1,0 +1,16 @@
+.about
+  .about-content-area
+    .image-area
+      img.about-logo(alt="logo" src="../../assets/about_logo.png")
+    .profile-area
+      el-row(v-for="item in basicProfiles" :key="item.tag")
+        el-col.tag(:span="10") {{ item.tag }}
+        el-col.text(:span="14") {{ item.text }}
+      el-row
+        el-col.tag(:span="10") Contact
+        el-col.text(:span="14")
+          el-row.link-area(v-for="item in linkProfiles" :key="item.tag")
+            el-col(:span="12") {{ item.tag }}
+            el-col(:span="12")
+              a.link(v-bind:href="item.link" target="blank") {{ item.text }}
+

@@ -10,8 +10,8 @@ export default class Header extends Vue {
       pass: "/"
     },
     {
-      label: "About",
-      pass: "/"
+      label: "Profile",
+      pass: "/profile"
     },
     {
       label: "Language",
