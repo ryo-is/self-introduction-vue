@@ -6,4 +6,12 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+
+  &.basic-color {
+    background-color: $base-back-color;
+  }
+
+  &.dark-color {
+    background-color: $home-back-color;
+  }
 }

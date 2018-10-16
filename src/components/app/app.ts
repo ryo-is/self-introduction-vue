@@ -7,4 +7,6 @@ import Header from "../header/Header.vue";
     Header
   }
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  backgroundColor: string = "basic-color";
+}

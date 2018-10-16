@@ -15,24 +15,30 @@ export default class Header extends Vue {
     },
     {
       label: "Language",
-      pass: "/"
+      pass: "/language"
     },
     {
       label: "Favorite",
-      pass: "/"
+      pass: "/favorite"
     },
     {
       label: "CloudService",
-      pass: "/"
+      pass: "/cloudService"
     },
     {
       label: "Contact",
-      pass: "/"
+      pass: "/contact"
     }
   ];
 
-  public changePage(pass: string) {
+  public changePage(path: string) {
     console.log("change page"); // eslint-disable-line no-console
-    return router.push(pass);
+    const currentPath = this.$router.currentRoute.path;
+    if (currentPath === "/") {
+      this.$parent.$data.backgroundColor = "dark-color";
+    } else {
+      this.$parent.$data.backgroundColor = "basic-color";
+    }
+    return router.push(path);
   }
 }
