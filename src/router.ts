@@ -7,6 +7,7 @@ import Language from "./components/language/Language.vue";
 import Favorite from "./components/favorite/Favorite.vue";
 import CloudService from "./components/cloudService/CloudService.vue";
 import AWS from "./components/cloudService/children/aws/AWS.vue";
+import AliCloud from "./components/cloudService/children/aliCloud/AliCloud.vue";
 import Contact from "./components/contact/Contact.vue";
 
 Vue.use(Router);
@@ -44,6 +45,11 @@ export default new Router({
           path: "aws",
           name: "aws",
           component: AWS
+        },
+        {
+          path: "aliCloud",
+          name: "aliCloud",
+          component: AliCloud
         }
       ]
     },
