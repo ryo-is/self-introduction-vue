@@ -2,3 +2,4 @@
   el-row.header-links
     el-col(:span="4" v-for="link in headerLinks" :key="link.label")
       .link(v-on:click="changePage(link.pass)") {{ link.label }}
+

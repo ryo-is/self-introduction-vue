@@ -44,6 +44,10 @@
 
             .el-col {
               text-align: left;
+
+              .link {
+                color: $base-font-color;
+              }
             }
           }
         }
