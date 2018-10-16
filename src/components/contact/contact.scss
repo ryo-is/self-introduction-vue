@@ -1,14 +1,38 @@
 @import "../../common/scss/config";
 
-.language {
+.contact {
   background-color: $base-back-color;
   color: $base-font-color;
   height: 100%;
   min-height: 100vh;
 
-  .language-content-area {
+  .contact-content-area {
+    font-size: 20px;
     margin: auto;
     padding-top: 64px;
     width: 60%;
+
+    .title {
+      line-height: 50px;
+      margin-top: 30px;
+    }
+
+    .el-row {
+      line-height: 50px;
+
+      .tag {
+        padding-right: 1rem;
+        text-align: right;
+      }
+
+      .value {
+        padding-left: 2rem;
+        text-align: left;
+
+        .link {
+          color: $base-font-color;
+        }
+      }
+    }
   }
 }

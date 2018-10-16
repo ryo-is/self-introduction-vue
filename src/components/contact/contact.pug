@@ -1,2 +1,10 @@
-.language
-  .language-content-area {{ title }}
+.contact
+  .contact-content-area
+    .title {{ title }}
+    el-row.gmail-info
+      el-col(:span="10").tag Gmail:
+      el-col(:span="14").value {{ gmailAddress }}
+    el-row.twitter-info
+      el-col(:span="10").tag Twitter:
+      el-col(:span="14").value
+        a.link(v-bind:href="twitterInfo.link") {{ twitterInfo.name }}

@@ -1,12 +1,12 @@
 @import "../../common/scss/config";
 
-.language {
+.favorite {
   background-color: $base-back-color;
   color: $base-font-color;
   height: 100%;
   min-height: 100vh;
 
-  .language-content-area {
+  .favorite-content-area {
     margin: auto;
     padding-top: 64px;
     width: 60%;
