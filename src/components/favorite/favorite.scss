@@ -10,5 +10,43 @@
     margin: auto;
     padding-top: 64px;
     width: 60%;
+
+    .favorite-title {
+      font-size: 24px;
+      margin: 20px 0;
+    }
+
+    .el-row {
+      margin-bottom: 40px;
+
+      .image-area {
+        margin: auto;
+        width: 60%;
+      }
+
+      .text-area {
+        padding-left: 2rem;
+        text-align: left;
+
+        .title {
+          border-bottom: 2px solid $base-font-color;
+          border-left: 12px solid $base-font-color;
+          font-size: 28px;
+          margin-bottom: 1rem;
+          padding: 5px 0 5px 1rem;
+        }
+
+        .text {
+          font-size: 18px;
+          line-height: 32px;
+          padding-left: 1rem;
+
+          .link {
+            color: $base-font-color;
+            font-weight: bold;
+          }
+        }
+      }
+    }
   }
 }

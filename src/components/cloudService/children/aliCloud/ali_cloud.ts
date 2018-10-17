@@ -15,7 +15,8 @@ export default class AliCloud extends Vue {
     },
     {
       tag: "コメント",
-      text: "まだ個人で簡単に試してみたレベル。ただ中国でAWS使えないに等しいので、もし中国でクラウドするならAliCloud一択なのが現状みたい。"
+      text:
+        "まだ個人で簡単に試してみたレベル。ただ中国でAWS使えないに等しいので、もし中国でクラウドするならAliCloud一択なのが現状みたい。"
     }
   ];
 }
