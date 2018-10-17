@@ -1,33 +1,25 @@
 .favorite
   .favorite-content-area
     .favorite-title お気に入りコンテンツ
-    el-row
-      el-col(:span="6")
-        .image-area
-          img(src="../../assets/vue_logo.png")
-      el-col.text-area(:span="18")
-        el-col.title Vue.js
-        el-col.text DynamoDBに蓄積されたIoTセンサーデータを可視化するIoT向けのアプリケーション
-          span
-            a.link(href="https://vis2.iot.kyoto" target="blank") IoT.kyotoVIS
-          | をVue.jsで書き換えました。<br/>
-          | その結果アプリケーションをSPAにすることができ、ついでにサーバレス化しました。<br/>
-          | HTML/CSS/JSなどのコンテンツはS3に配置し、
-          | 今までEC2上で動いていたNode.jsをLambdaに置き換え、クライアントサイドからはaxiosを
-          | 利用してAPIGatewayにリクエストを投げて、Lambdaを呼び出すようにし、
-          | DynamoDBのデータを取得するようなアーキテクチャにしました。<br/>
-          | またこのサイトもVue.jsで書いています。最近はどっぷりVue.jsにハマっています。
-    el-row
-      el-col(:span="6")
-        .image-area
-          img(src="../../assets/serverless_logo.png")
-      el-col.text-area(:span="18")
-        el-col.title Serverless Framework
-        el-col.text みなさんはLambdaのデプロイをどのようにされていますでしょうか？<br/>
-          | 私はLambdaをこよなく愛しています。Lambdaは様々な場面で役に立つので気づけば大量のLambdaがデプロイされている…なんてことがありませんか？<br/>
-          | なので、Serverless Frameworkを利用して大量のLambdaのソースコードの管理やデプロイの実行をしています。<br/>
-          | IoT.kyotoVISのLambdaはすべてServerless Frameworkを利用しています。<br/>
-          | また、Serverless Frameworkを利用することでLambda(Node.js)のソースコードをTypeScriptで書いてデプロイすることが
-          | 容易になります。
-          | JS書くならできるだけTSで書きたいですからね…
+    el-row.text-area
+      el-col.title Vue.js
+      el-col.text DynamoDBに蓄積されたIoTセンサーデータを可視化するIoT向けのアプリケーション
+        span
+          a.link(href="https://vis2.iot.kyoto" target="blank") IoT.kyotoVIS
+        | をVue.jsで書き換えました。<br/>
+        | その結果アプリケーションをSPAにすることができ、ついでにサーバレス化しました。<br/>
+        | HTML/CSS/JSなどのコンテンツはS3に配置し、
+        | 今までEC2上で動いていたNode.jsをLambdaに置き換え、クライアントサイドからはaxiosを
+        | 利用してAPIGatewayにリクエストを投げて、Lambdaを呼び出すようにし、
+        | DynamoDBのデータを取得するようなアーキテクチャにしました。<br/>
+        | またこのサイトもVue.jsで書いています。最近はどっぷりVue.jsにハマっています。
+    el-row.text-area
+      el-col.title Serverless Framework
+      el-col.text みなさんはLambdaのデプロイをどのようにされていますでしょうか？<br/>
+        | 私はLambdaをこよなく愛しています。Lambdaは様々な場面で役に立つので気づけば大量のLambdaがデプロイされている…なんてことがありませんか？<br/>
+        | なので、Serverless Frameworkを利用して大量のLambdaのソースコードの管理やデプロイの実行をしています。<br/>
+        | IoT.kyotoVISのLambdaはすべてServerless Frameworkを利用しています。<br/>
+        | また、Serverless Frameworkを利用することでLambda(Node.js)のソースコードをTypeScriptで書いてデプロイすることが
+        | 容易になります。
+        | JS書くならできるだけTSで書きたいですからね…
 
