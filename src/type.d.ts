@@ -17,4 +17,7 @@ export type linkProfilesType = {
 export type serviceLinksType = {
   text: string;
   path: string;
+  buttonType: string;
 };
+
+export type cloudServiceTextType = basicProfilesType;

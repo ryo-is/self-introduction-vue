@@ -3,6 +3,7 @@
     .title {{ title }}
     el-row
       el-col(:span="12" v-for="item in serviceLinks" :key="item.text")
-        el-button(type="warning" v-on:click="changePage(item.path)") {{ item.text }}
-    router-view
+        el-button(v-bind:type="item.buttonType" v-on:click="changePage(item.path)") {{ item.text }}
+    transition(name="router-transition" enter-active-class="animated fadeInUp")
+      router-view
 

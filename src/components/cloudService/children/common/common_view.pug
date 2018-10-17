@@ -1,0 +1,6 @@
+.content-area
+  .title {{ title }}
+  .text-area
+    el-row(v-for="item in cloudServiceText" :key="item.tag")
+      el-col.tag(:span="10") {{ item.tag }}
+      el-col.text(:span="14") {{ item.text }}

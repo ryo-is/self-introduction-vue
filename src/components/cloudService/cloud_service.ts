@@ -8,11 +8,13 @@ export default class CloudService extends Vue {
   serviceLinks: serviceLinksType[] = [
     {
       text: "AWS",
-      path: "/aws"
+      path: "/aws",
+      buttonType: "warning"
     },
     {
       text: "AliCloud",
-      path: "/aliCloud"
+      path: "/aliCloud",
+      buttonType: "info"
     }
   ];
 
