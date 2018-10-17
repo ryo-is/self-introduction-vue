@@ -18,7 +18,6 @@ export default class CloudService extends Vue {
 
   public changePage(path: string) {
     console.log("change page", path); // eslint-disable-line no-console
-    const currentPath = this.$router.currentRoute.path;
-    return router.push(currentPath + path);
+    return router.push("/cloudService" + path);
   }
 }
